@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_database/firebase_database.dart';
 
+class ControlPump extends StatefulWidget {
+  @override
+  _ControlPumpState createState() => _ControlPumpState();
+}
 
-class PumpStatus extends StatelessWidget {
+class _ControlPumpState extends State<ControlPump> {
   final dbref = FirebaseDatabase.instance.reference();
-
   final dbRef = FirebaseDatabase.instance.reference().child('PUMP-YENDEEKPI');
   List<Map<dynamic, dynamic>> lists = [];
 
@@ -642,12 +645,10 @@ class PumpStatus extends StatelessWidget {
         });
   }
 
-
   void updateData(int sta, String pump) {
     dbref.child("PUMP-YENDEEKPI/$pump").update({'status': sta});
     print("อัพเดทข้อมูลสำเร็จ");
   }
-
 }
 
 final ButtonStyle sendDataToFirebaseButtonStyle = ElevatedButton.styleFrom(
@@ -658,7 +659,3 @@ final ButtonStyle sendDataToFirebaseButtonStyle = ElevatedButton.styleFrom(
     shape: const RoundedRectangleBorder(
       borderRadius: BorderRadius.all(Radius.circular(10)),
     ));
-
-
-
-
