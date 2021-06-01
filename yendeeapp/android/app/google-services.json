@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "713027576490",
+    "firebase_url": "https://yendeekpi-default-rtdb.firebaseio.com",
+    "project_id": "yendeekpi",
+    "storage_bucket": "yendeekpi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:713027576490:android:091ad0f829edbfc9fda6d3",
+        "android_client_info": {
+          "package_name": "com.example.yendeeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "713027576490-f8hr258u7vhr4jatjucl40ntavqtl0tm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.yendeeapp",
+            "certificate_hash": "6399e378b93bc2df1d6e1728564e0871681702e0"
+          }
+        },
+        {
+          "client_id": "713027576490-l930ucdep15723lohh3i5ioc4btec742.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8UvjclLmHVSJ_uc3nys3XUh-cYrJCJOE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "713027576490-l930ucdep15723lohh3i5ioc4btec742.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
