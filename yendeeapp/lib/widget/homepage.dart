@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:yendeeapp/widget/contenthome.dart';
 import 'package:yendeeapp/widget/control_pump.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
+  @override
+  _HomePageState createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,7 +35,10 @@ class HomePage extends StatelessWidget {
             ),
           ),
         ),
-        body: ControlPump());
+        body: ContentHome());
   }
 }
+
+
+
 

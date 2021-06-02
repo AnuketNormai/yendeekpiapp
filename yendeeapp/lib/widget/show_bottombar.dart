@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:yendeeapp/widget/contenthome.dart';
 import 'package:yendeeapp/widget/control_pump.dart';
 import 'package:yendeeapp/widget/homepage.dart';
 
@@ -15,6 +16,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   List<Widget> _widgetOptions = <Widget>[
+    ContentHome(),
     ControlPump(),
     Text(
       'Index 1: valve',
@@ -72,6 +74,11 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       ),
         bottomNavigationBar: BottomNavigationBar(
         items: <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Home',
+            backgroundColor: Colors.green[900],
+          ),
           BottomNavigationBarItem(
             icon: Icon(Icons.water_damage_outlined),
             label: 'Pump',
