@@ -373,7 +373,742 @@ class _ControlValveState extends State<ControlValve> {
                               ),
                             ],
                           ),
-                        ]))
+                        ])),
+                //  Row 4 SV10-SV12
+                Container(
+                    height: 75.0,
+                    width: 125.0,
+                    margin: EdgeInsets.fromLTRB(5.0, 10.0, 5.0, 0),
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10.0),
+                        boxShadow: [
+                          BoxShadow(blurRadius: 2.0, color: Colors.grey)
+                        ]),
+                    child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: <Widget>[
+                          Stack(
+                            children: <Widget>[
+                              Container(
+                                padding: EdgeInsets.fromLTRB(20, 5, 20, 5.0),
+                                child: ElevatedButton(
+                                  child: Text('SV-10',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20.0,
+                                        color: Colors.white,
+                                        fontFamily: 'KanitLight',
+                                      )),
+                                  onPressed: () {
+                                    // readData();
+                                    (statusSV_10["status"] == 1)
+                                        ? updateData(0, "Solinoid Valve_10")
+                                        : updateData(1, "Solinoid Valve_10");
+                                    print("SV_10 working");
+                                  },
+                                  style: ElevatedButton.styleFrom(
+                                    primary: (statusSV_10["status"] == 1) ? Colors.greenAccent[400] : Colors.redAccent[400],
+                                    minimumSize: Size(100, 60),
+                                    padding: EdgeInsets.symmetric(horizontal: 16),
+                                    shape: const RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                                  )),
+                                ),
+                              ),
+                            ],
+                          ),
+                          Stack(
+                            children: <Widget>[
+                              Container(
+                                padding: EdgeInsets.fromLTRB(10, 5, 20, 5.0),
+                                child: ElevatedButton(
+                                  child: Text('SV-11',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20.0,
+                                        color: Colors.white,
+                                        fontFamily: 'KanitLight',
+                                      )),
+                                  onPressed: () {
+                                    // readData();
+                                    (statusSV_11["status"] == 1)
+                                        ? updateData(0, "Solinoid Valve_11")
+                                        : updateData(1, "Solinoid Valve_11");
+                                    print("SV_11 working");
+                                  },
+                                  style: ElevatedButton.styleFrom(
+                                    primary: (statusSV_11["status"] == 1) ? Colors.greenAccent[400] : Colors.redAccent[400],
+                                    minimumSize: Size(100, 60),
+                                    padding: EdgeInsets.symmetric(horizontal: 16),
+                                    shape: const RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                                  )),
+                                ),
+                              ),
+                            ],
+                          ),
+                          Stack(
+                            children: <Widget>[
+                              Container(
+                                padding: EdgeInsets.fromLTRB(10, 5, 20, 5.0),
+                                child: ElevatedButton(
+                                  child: Text('SV-12',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20.0,
+                                        color: Colors.white,
+                                        fontFamily: 'KanitLight',
+                                      )),
+                                  onPressed: () {
+                                    // readData();
+                                    (statusSV_12["status"] == 1)
+                                        ? updateData(0, "Solinoid Valve_12")
+                                        : updateData(1, "Solinoid Valve_12");
+                                    print("SV_12 working");
+                                  },
+                                  style: ElevatedButton.styleFrom(
+                                    primary: (statusSV_12["status"] == 1) ? Colors.greenAccent[400] : Colors.redAccent[400],
+                                    minimumSize: Size(100, 60),
+                                    padding: EdgeInsets.symmetric(horizontal: 16),
+                                    shape: const RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                                  )),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ])),
+                //  Row 3 SV13-SV15
+                Container(
+                    height: 75.0,
+                    width: 125.0,
+                    margin: EdgeInsets.fromLTRB(5.0, 10.0, 5.0, 0),
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10.0),
+                        boxShadow: [
+                          BoxShadow(blurRadius: 2.0, color: Colors.grey)
+                        ]),
+                    child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: <Widget>[
+                          Stack(
+                            children: <Widget>[
+                              Container(
+                                padding: EdgeInsets.fromLTRB(20, 5, 20, 5.0),
+                                child: ElevatedButton(
+                                  child: Text('SV-13',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20.0,
+                                        color: Colors.white,
+                                        fontFamily: 'KanitLight',
+                                      )),
+                                  onPressed: () {
+                                    // readData();
+                                    (statusSV_13["status"] == 1)
+                                        ? updateData(0, "Solinoid Valve_13")
+                                        : updateData(1, "Solinoid Valve_13");
+                                    print("SV_13 working");
+                                  },
+                                  style: ElevatedButton.styleFrom(
+                                    primary: (statusSV_13["status"] == 1) ? Colors.greenAccent[400] : Colors.redAccent[400],
+                                    minimumSize: Size(100, 60),
+                                    padding: EdgeInsets.symmetric(horizontal: 16),
+                                    shape: const RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                                  )),
+                                ),
+                              ),
+                            ],
+                          ),
+                          Stack(
+                            children: <Widget>[
+                              Container(
+                                padding: EdgeInsets.fromLTRB(10, 5, 20, 5.0),
+                                child: ElevatedButton(
+                                  child: Text('SV-14',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20.0,
+                                        color: Colors.white,
+                                        fontFamily: 'KanitLight',
+                                      )),
+                                  onPressed: () {
+                                    // readData();
+                                    (statusSV_14["status"] == 1)
+                                        ? updateData(0, "Solinoid Valve_14")
+                                        : updateData(1, "Solinoid Valve_14");
+                                    print("SV_14 working");
+                                  },
+                                  style: ElevatedButton.styleFrom(
+                                    primary: (statusSV_14["status"] == 1) ? Colors.greenAccent[400] : Colors.redAccent[400],
+                                    minimumSize: Size(100, 60),
+                                    padding: EdgeInsets.symmetric(horizontal: 16),
+                                    shape: const RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                                  )),
+                                ),
+                              ),
+                            ],
+                          ),
+                          Stack(
+                            children: <Widget>[
+                              Container(
+                                padding: EdgeInsets.fromLTRB(10, 5, 20, 5.0),
+                                child: ElevatedButton(
+                                  child: Text('SV-15',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20.0,
+                                        color: Colors.white,
+                                        fontFamily: 'KanitLight',
+                                      )),
+                                  onPressed: () {
+                                    // readData();
+                                    (statusSV_15["status"] == 1)
+                                        ? updateData(0, "Solinoid Valve_15")
+                                        : updateData(1, "Solinoid Valve_15");
+                                    print("SV_15 working");
+                                  },
+                                  style: ElevatedButton.styleFrom(
+                                    primary: (statusSV_15["status"] == 1) ? Colors.greenAccent[400] : Colors.redAccent[400],
+                                    minimumSize: Size(100, 60),
+                                    padding: EdgeInsets.symmetric(horizontal: 16),
+                                    shape: const RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                                  )),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ])),
+                //  Row 6 SV16-SV18
+                Container(
+                    height: 75.0,
+                    width: 125.0,
+                    margin: EdgeInsets.fromLTRB(5.0, 10.0, 5.0, 0),
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10.0),
+                        boxShadow: [
+                          BoxShadow(blurRadius: 2.0, color: Colors.grey)
+                        ]),
+                    child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: <Widget>[
+                          Stack(
+                            children: <Widget>[
+                              Container(
+                                padding: EdgeInsets.fromLTRB(20, 5, 20, 5.0),
+                                child: ElevatedButton(
+                                  child: Text('SV-16',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20.0,
+                                        color: Colors.white,
+                                        fontFamily: 'KanitLight',
+                                      )),
+                                  onPressed: () {
+                                    // readData();
+                                    (statusSV_16["status"] == 1)
+                                        ? updateData(0, "Solinoid Valve_16")
+                                        : updateData(1, "Solinoid Valve_16");
+                                    print("SV_16 working");
+                                  },
+                                  style: ElevatedButton.styleFrom(
+                                    primary: (statusSV_16["status"] == 1) ? Colors.greenAccent[400] : Colors.redAccent[400],
+                                    minimumSize: Size(100, 60),
+                                    padding: EdgeInsets.symmetric(horizontal: 16),
+                                    shape: const RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                                  )),
+                                ),
+                              ),
+                            ],
+                          ),
+                          Stack(
+                            children: <Widget>[
+                              Container(
+                                padding: EdgeInsets.fromLTRB(10, 5, 20, 5.0),
+                                child: ElevatedButton(
+                                  child: Text('SV-17',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20.0,
+                                        color: Colors.white,
+                                        fontFamily: 'KanitLight',
+                                      )),
+                                  onPressed: () {
+                                    // readData();
+                                    (statusSV_17["status"] == 1)
+                                        ? updateData(0, "Solinoid Valve_17")
+                                        : updateData(1, "Solinoid Valve_17");
+                                    print("SV_17 working");
+                                  },
+                                  style: ElevatedButton.styleFrom(
+                                    primary: (statusSV_17["status"] == 1) ? Colors.greenAccent[400] : Colors.redAccent[400],
+                                    minimumSize: Size(100, 60),
+                                    padding: EdgeInsets.symmetric(horizontal: 16),
+                                    shape: const RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                                  )),
+                                ),
+                              ),
+                            ],
+                          ),
+                          Stack(
+                            children: <Widget>[
+                              Container(
+                                padding: EdgeInsets.fromLTRB(10, 5, 20, 5.0),
+                                child: ElevatedButton(
+                                  child: Text('SV-18',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20.0,
+                                        color: Colors.white,
+                                        fontFamily: 'KanitLight',
+                                      )),
+                                  onPressed: () {
+                                    // readData();
+                                    (statusSV_18["status"] == 1)
+                                        ? updateData(0, "Solinoid Valve_18")
+                                        : updateData(1, "Solinoid Valve_18");
+                                    print("SV_18 working");
+                                  },
+                                  style: ElevatedButton.styleFrom(
+                                    primary: (statusSV_18["status"] == 1) ? Colors.greenAccent[400] : Colors.redAccent[400],
+                                    minimumSize: Size(100, 60),
+                                    padding: EdgeInsets.symmetric(horizontal: 16),
+                                    shape: const RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                                  )),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ])),
+                //  Row 7 SV19-SV21
+                Container(
+                    height: 75.0,
+                    width: 125.0,
+                    margin: EdgeInsets.fromLTRB(5.0, 10.0, 5.0, 0),
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10.0),
+                        boxShadow: [
+                          BoxShadow(blurRadius: 2.0, color: Colors.grey)
+                        ]),
+                    child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: <Widget>[
+                          Stack(
+                            children: <Widget>[
+                              Container(
+                                padding: EdgeInsets.fromLTRB(20, 5, 20, 5.0),
+                                child: ElevatedButton(
+                                  child: Text('SV-19',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20.0,
+                                        color: Colors.white,
+                                        fontFamily: 'KanitLight',
+                                      )),
+                                  onPressed: () {
+                                    // readData();
+                                    (statusSV_19["status"] == 1)
+                                        ? updateData(0, "Solinoid Valve_19")
+                                        : updateData(1, "Solinoid Valve_19");
+                                    print("SV_19 working");
+                                  },
+                                  style: ElevatedButton.styleFrom(
+                                    primary: (statusSV_19["status"] == 1) ? Colors.greenAccent[400] : Colors.redAccent[400],
+                                    minimumSize: Size(100, 60),
+                                    padding: EdgeInsets.symmetric(horizontal: 16),
+                                    shape: const RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                                  )),
+                                ),
+                              ),
+                            ],
+                          ),
+                          Stack(
+                            children: <Widget>[
+                              Container(
+                                padding: EdgeInsets.fromLTRB(10, 5, 20, 5.0),
+                                child: ElevatedButton(
+                                  child: Text('SV-20',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20.0,
+                                        color: Colors.white,
+                                        fontFamily: 'KanitLight',
+                                      )),
+                                  onPressed: () {
+                                    // readData();
+                                    (statusSV_20["status"] == 1)
+                                        ? updateData(0, "Solinoid Valve_20")
+                                        : updateData(1, "Solinoid Valve_20");
+                                    print("SV_20 working");
+                                  },
+                                  style: ElevatedButton.styleFrom(
+                                    primary: (statusSV_20["status"] == 1) ? Colors.greenAccent[400] : Colors.redAccent[400],
+                                    minimumSize: Size(100, 60),
+                                    padding: EdgeInsets.symmetric(horizontal: 16),
+                                    shape: const RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                                  )),
+                                ),
+                              ),
+                            ],
+                          ),
+                          Stack(
+                            children: <Widget>[
+                              Container(
+                                padding: EdgeInsets.fromLTRB(10, 5, 20, 5.0),
+                                child: ElevatedButton(
+                                  child: Text('SV-21',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20.0,
+                                        color: Colors.white,
+                                        fontFamily: 'KanitLight',
+                                      )),
+                                  onPressed: () {
+                                    // readData();
+                                    (statusSV_21["status"] == 1)
+                                        ? updateData(0, "Solinoid Valve_21")
+                                        : updateData(1, "Solinoid Valve_21");
+                                    print("SV_21 working");
+                                  },
+                                  style: ElevatedButton.styleFrom(
+                                    primary: (statusSV_21["status"] == 1) ? Colors.greenAccent[400] : Colors.redAccent[400],
+                                    minimumSize: Size(100, 60),
+                                    padding: EdgeInsets.symmetric(horizontal: 16),
+                                    shape: const RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                                  )),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ])),
+                //  Row 8 SV22-SV24
+                Container(
+                    height: 75.0,
+                    width: 125.0,
+                    margin: EdgeInsets.fromLTRB(5.0, 10.0, 5.0, 0),
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10.0),
+                        boxShadow: [
+                          BoxShadow(blurRadius: 2.0, color: Colors.grey)
+                        ]),
+                    child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: <Widget>[
+                          Stack(
+                            children: <Widget>[
+                              Container(
+                                padding: EdgeInsets.fromLTRB(20, 5, 20, 5.0),
+                                child: ElevatedButton(
+                                  child: Text('SV-22',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20.0,
+                                        color: Colors.white,
+                                        fontFamily: 'KanitLight',
+                                      )),
+                                  onPressed: () {
+                                    // readData();
+                                    (statusSV_22["status"] == 1)
+                                        ? updateData(0, "Solinoid Valve_22")
+                                        : updateData(1, "Solinoid Valve_22");
+                                    print("SV_22 working");
+                                  },
+                                  style: ElevatedButton.styleFrom(
+                                    primary: (statusSV_22["status"] == 1) ? Colors.greenAccent[400] : Colors.redAccent[400],
+                                    minimumSize: Size(100, 60),
+                                    padding: EdgeInsets.symmetric(horizontal: 16),
+                                    shape: const RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                                  )),
+                                ),
+                              ),
+                            ],
+                          ),
+                          Stack(
+                            children: <Widget>[
+                              Container(
+                                padding: EdgeInsets.fromLTRB(10, 5, 20, 5.0),
+                                child: ElevatedButton(
+                                  child: Text('SV-23',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20.0,
+                                        color: Colors.white,
+                                        fontFamily: 'KanitLight',
+                                      )),
+                                  onPressed: () {
+                                    // readData();
+                                    (statusSV_23["status"] == 1)
+                                        ? updateData(0, "Solinoid Valve_23")
+                                        : updateData(1, "Solinoid Valve_23");
+                                    print("SV_23 working");
+                                  },
+                                  style: ElevatedButton.styleFrom(
+                                    primary: (statusSV_23["status"] == 1) ? Colors.greenAccent[400] : Colors.redAccent[400],
+                                    minimumSize: Size(100, 60),
+                                    padding: EdgeInsets.symmetric(horizontal: 16),
+                                    shape: const RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                                  )),
+                                ),
+                              ),
+                            ],
+                          ),
+                          Stack(
+                            children: <Widget>[
+                              Container(
+                                padding: EdgeInsets.fromLTRB(10, 5, 20, 5.0),
+                                child: ElevatedButton(
+                                  child: Text('SV-24',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20.0,
+                                        color: Colors.white,
+                                        fontFamily: 'KanitLight',
+                                      )),
+                                  onPressed: () {
+                                    // readData();
+                                    (statusSV_24["status"] == 1)
+                                        ? updateData(0, "Solinoid Valve_24")
+                                        : updateData(1, "Solinoid Valve_24");
+                                    print("SV_24 working");
+                                  },
+                                  style: ElevatedButton.styleFrom(
+                                    primary: (statusSV_24["status"] == 1) ? Colors.greenAccent[400] : Colors.redAccent[400],
+                                    minimumSize: Size(100, 60),
+                                    padding: EdgeInsets.symmetric(horizontal: 16),
+                                    shape: const RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                                  )),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ])),
+                //  Row 9 SV25-SV27
+                Container(
+                    height: 75.0,
+                    width: 125.0,
+                    margin: EdgeInsets.fromLTRB(5.0, 10.0, 5.0, 0),
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10.0),
+                        boxShadow: [
+                          BoxShadow(blurRadius: 2.0, color: Colors.grey)
+                        ]),
+                    child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: <Widget>[
+                          Stack(
+                            children: <Widget>[
+                              Container(
+                                padding: EdgeInsets.fromLTRB(20, 5, 20, 5.0),
+                                child: ElevatedButton(
+                                  child: Text('SV-25',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20.0,
+                                        color: Colors.white,
+                                        fontFamily: 'KanitLight',
+                                      )),
+                                  onPressed: () {
+                                    // readData();
+                                    (statusSV_25["status"] == 1)
+                                        ? updateData(0, "Solinoid Valve_25")
+                                        : updateData(1, "Solinoid Valve_25");
+                                    print("SV_25 working");
+                                  },
+                                  style: ElevatedButton.styleFrom(
+                                    primary: (statusSV_25["status"] == 1) ? Colors.greenAccent[400] : Colors.redAccent[400],
+                                    minimumSize: Size(100, 60),
+                                    padding: EdgeInsets.symmetric(horizontal: 16),
+                                    shape: const RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                                  )),
+                                ),
+                              ),
+                            ],
+                          ),
+                          Stack(
+                            children: <Widget>[
+                              Container(
+                                padding: EdgeInsets.fromLTRB(10, 5, 20, 5.0),
+                                child: ElevatedButton(
+                                  child: Text('SV-26',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20.0,
+                                        color: Colors.white,
+                                        fontFamily: 'KanitLight',
+                                      )),
+                                  onPressed: () {
+                                    // readData();
+                                    (statusSV_26["status"] == 1)
+                                        ? updateData(0, "Solinoid Valve_26")
+                                        : updateData(1, "Solinoid Valve_26");
+                                    print("SV_26 working");
+                                  },
+                                  style: ElevatedButton.styleFrom(
+                                    primary: (statusSV_26["status"] == 1) ? Colors.greenAccent[400] : Colors.redAccent[400],
+                                    minimumSize: Size(100, 60),
+                                    padding: EdgeInsets.symmetric(horizontal: 16),
+                                    shape: const RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                                  )),
+                                ),
+                              ),
+                            ],
+                          ),
+                          Stack(
+                            children: <Widget>[
+                              Container(
+                                padding: EdgeInsets.fromLTRB(10, 5, 20, 5.0),
+                                child: ElevatedButton(
+                                  child: Text('SV-27',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20.0,
+                                        color: Colors.white,
+                                        fontFamily: 'KanitLight',
+                                      )),
+                                  onPressed: () {
+                                    // readData();
+                                    (statusSV_27["status"] == 1)
+                                        ? updateData(0, "Solinoid Valve_27")
+                                        : updateData(1, "Solinoid Valve_27");
+                                    print("SV_27 working");
+                                  },
+                                  style: ElevatedButton.styleFrom(
+                                    primary: (statusSV_27["status"] == 1) ? Colors.greenAccent[400] : Colors.redAccent[400],
+                                    minimumSize: Size(100, 60),
+                                    padding: EdgeInsets.symmetric(horizontal: 16),
+                                    shape: const RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                                  )),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ])),
+                //  Row 10 SV28-SV30
+                Container(
+                    height: 75.0,
+                    width: 125.0,
+                    margin: EdgeInsets.fromLTRB(5.0, 10.0, 5.0, 0),
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10.0),
+                        boxShadow: [
+                          BoxShadow(blurRadius: 2.0, color: Colors.grey)
+                        ]),
+                    child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: <Widget>[
+                          Stack(
+                            children: <Widget>[
+                              Container(
+                                padding: EdgeInsets.fromLTRB(20, 5, 20, 5.0),
+                                child: ElevatedButton(
+                                  child: Text('SV-28',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20.0,
+                                        color: Colors.white,
+                                        fontFamily: 'KanitLight',
+                                      )),
+                                  onPressed: () {
+                                    // readData();
+                                    (statusSV_28["status"] == 1)
+                                        ? updateData(0, "Solinoid Valve_28")
+                                        : updateData(1, "Solinoid Valve_28");
+                                    print("SV_28 working");
+                                  },
+                                  style: ElevatedButton.styleFrom(
+                                    primary: (statusSV_28["status"] == 1) ? Colors.greenAccent[400] : Colors.redAccent[400],
+                                    minimumSize: Size(100, 60),
+                                    padding: EdgeInsets.symmetric(horizontal: 16),
+                                    shape: const RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                                  )),
+                                ),
+                              ),
+                            ],
+                          ),
+                          Stack(
+                            children: <Widget>[
+                              Container(
+                                padding: EdgeInsets.fromLTRB(10, 5, 20, 5.0),
+                                child: ElevatedButton(
+                                  child: Text('SV-29',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20.0,
+                                        color: Colors.white,
+                                        fontFamily: 'KanitLight',
+                                      )),
+                                  onPressed: () {
+                                    // readData();
+                                    (statusSV_29["status"] == 1)
+                                        ? updateData(0, "Solinoid Valve_29")
+                                        : updateData(1, "Solinoid Valve_29");
+                                    print("SV_29 working");
+                                  },
+                                  style: ElevatedButton.styleFrom(
+                                    primary: (statusSV_29["status"] == 1) ? Colors.greenAccent[400] : Colors.redAccent[400],
+                                    minimumSize: Size(100, 60),
+                                    padding: EdgeInsets.symmetric(horizontal: 16),
+                                    shape: const RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                                  )),
+                                ),
+                              ),
+                            ],
+                          ),
+                          Stack(
+                            children: <Widget>[
+                              Container(
+                                padding: EdgeInsets.fromLTRB(10, 5, 20, 5.0),
+                                child: ElevatedButton(
+                                  child: Text('SV-30',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20.0,
+                                        color: Colors.white,
+                                        fontFamily: 'KanitLight',
+                                      )),
+                                  onPressed: () {
+                                    // readData();
+                                    (statusSV_30["status"] == 1)
+                                        ? updateData(0, "Solinoid Valve_30")
+                                        : updateData(1, "Solinoid Valve_30");
+                                    print("SV_30 working");
+                                  },
+                                  style: ElevatedButton.styleFrom(
+                                    primary: (statusSV_30["status"] == 1) ? Colors.greenAccent[400] : Colors.redAccent[400],
+                                    minimumSize: Size(100, 60),
+                                    padding: EdgeInsets.symmetric(horizontal: 16),
+                                    shape: const RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                                  )),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ])),
                 
               ],
             );
