@@ -22,16 +22,19 @@ class _ControlPumpState extends State<ControlPump> {
             Map<dynamic, dynamic> values = dataValues.value;
             values.forEach((key, values) {
               lists.add(values);
+              // print(lists);
             });
-            var statuspump_1 = lists[8];
-            var statuspump_2 = lists[7];
-            var statuspump_3 = lists[6];
-            var statuspump_4 = lists[5];
-            var statuspump_5 = lists[4];
-            var statuspump_6 = lists[3];
-            var statuspump_7 = lists[2];
-            var statuspump_8 = lists[1];
-            var statuspump_9 = lists[0];
+ 
+            var statuspump_09 = lists[9];
+            var statuspump_10 = lists[8];
+            var statuspump_03 = lists[7];
+            var statuspump_04 = lists[6];
+            var statuspump_01 = lists[5];
+            var statuspump_02 = lists[4];
+            var statuspump_07 = lists[3];
+            var statuspump_08 = lists[2];
+            var statuspump_05 = lists[1];
+            var statuspump_06 = lists[0];
 
             return ListView(
               children: [
@@ -64,9 +67,9 @@ class _ControlPumpState extends State<ControlPump> {
                                   style: sendDataToFirebaseButtonStyle,
                                   onPressed: () {
                                     // readData();
-                                    (statuspump_1["status"] == 1)
-                                        ? updateData(0, "Pump_1")
-                                        : updateData(1, "Pump_1");
+                                    (statuspump_01["status"] == 1)
+                                        ? updateData(0, "Pump_01")
+                                        : updateData(1, "Pump_01");
                                     print("Cooling pump working");
                                   },
                                 ),
@@ -80,13 +83,13 @@ class _ControlPumpState extends State<ControlPump> {
                               height: 60.0,
                               width: 125.0,
                               decoration: BoxDecoration(
-                                color: (statuspump_1["status"] == 1)
+                                color: (statuspump_01["status"] == 1)
                                     ? Colors.greenAccent[100].withOpacity(0.5)
                                     : Colors.grey[100],
                                 borderRadius: BorderRadius.circular(10.0),
                               ),
                               child: Center(
-                                  child: (statuspump_1["status"] == 1)
+                                  child: (statuspump_01["status"] == 1)
                                       ? Text("กำลังทำงาน",
                                           style: TextStyle(
                                             fontWeight: FontWeight.bold,
@@ -102,7 +105,7 @@ class _ControlPumpState extends State<ControlPump> {
                                             fontFamily: 'KanitLight',
                                           ))))
                         ])),
-                // ปั๊มหลักเข้ารางปลูก
+                // ปั๊มรีเทินเข้าถัง
                 Container(
                     height: 75.0,
                     width: 125.0,
@@ -131,10 +134,10 @@ class _ControlPumpState extends State<ControlPump> {
                                   style: sendDataToFirebaseButtonStyle,
                                   onPressed: () {
                                     // readData();
-                                    (statuspump_2["status"] == 1)
-                                        ? updateData(0,"Pump_2")
-                                        : updateData(1,"Pump_2");
-                                    print("Main pump working");
+                                    (statuspump_02["status"] == 1)
+                                        ? updateData(0, "Pump_02")
+                                        : updateData(1, "Pump_02");
+                                    print("AB Main pump working");
                                   },
                                 ),
                               ),
@@ -147,13 +150,13 @@ class _ControlPumpState extends State<ControlPump> {
                               height: 60.0,
                               width: 125.0,
                               decoration: BoxDecoration(
-                                color: (statuspump_2["status"] == 1)
+                                color: (statuspump_02["status"] == 1)
                                     ? Colors.greenAccent[100].withOpacity(0.5)
                                     : Colors.grey[100],
                                 borderRadius: BorderRadius.circular(10.0),
                               ),
                               child: Center(
-                                  child: (statuspump_2["status"] == 1)
+                                  child: (statuspump_02["status"] == 1)
                                       ? Text("กำลังทำงาน",
                                           style: TextStyle(
                                             fontWeight: FontWeight.bold,
@@ -169,7 +172,7 @@ class _ControlPumpState extends State<ControlPump> {
                                             fontFamily: 'KanitLight',
                                           ))))
                         ])),
-                // ปั้มน้ำสำรอง
+                // ปั้มน้ำหลักเข้ารางปลูก
                 Container(
                     height: 75.0,
                     width: 125.0,
@@ -188,7 +191,7 @@ class _ControlPumpState extends State<ControlPump> {
                               Container(
                                 padding: EdgeInsets.fromLTRB(5, 5, 5, 5.0),
                                 child: ElevatedButton(
-                                  child: Text('ปั้มน้ำสำรองเข้ารางปลูก',
+                                  child: Text('ปั้มน้ำหลักเข้ารางปลูก',
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 20.0,
@@ -198,10 +201,10 @@ class _ControlPumpState extends State<ControlPump> {
                                   style: sendDataToFirebaseButtonStyle,
                                   onPressed: () {
                                     // readData();
-                                    (statuspump_3["status"] == 1)
-                                        ? updateData(0,"Pump_3")
-                                        : updateData(1,"Pump_3");
-                                    print("Cooling pump working");
+                                    (statuspump_03["status"] == 1)
+                                        ? updateData(0, "Pump_03")
+                                        : updateData(1, "Pump_03");
+                                    print("AB Main pump working");
                                   },
                                 ),
                               ),
@@ -214,13 +217,147 @@ class _ControlPumpState extends State<ControlPump> {
                               height: 60.0,
                               width: 125.0,
                               decoration: BoxDecoration(
-                                color: (statuspump_3["status"] == 1)
+                                color: (statuspump_03["status"] == 1)
                                     ? Colors.greenAccent[100].withOpacity(0.5)
                                     : Colors.grey[100],
                                 borderRadius: BorderRadius.circular(10.0),
                               ),
                               child: Center(
-                                  child: (statuspump_3["status"] == 1)
+                                  child: (statuspump_03["status"] == 1)
+                                      ? Text("กำลังทำงาน",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20.0,
+                                            color: Colors.green,
+                                            fontFamily: 'KanitLight',
+                                          ))
+                                      : Text("หยุดทำงาน",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20.0,
+                                            color: Colors.red,
+                                            fontFamily: 'KanitLight',
+                                          ))))
+                        ])),
+                // ปั้มสำรองเข้ารางปลูก
+                Container(
+                    height: 75.0,
+                    width: 125.0,
+                    margin: EdgeInsets.fromLTRB(5.0, 10.0, 5.0, 0),
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10.0),
+                        boxShadow: [
+                          BoxShadow(blurRadius: 2.0, color: Colors.grey)
+                        ]),
+                    child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: <Widget>[
+                          Stack(
+                            children: <Widget>[
+                              Container(
+                                padding: EdgeInsets.fromLTRB(5, 5, 5, 5.0),
+                                child: ElevatedButton(
+                                  child: Text('ปั้มสำรองเข้ารางปลูก',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20.0,
+                                        color: Colors.green[900],
+                                        fontFamily: 'KanitLight',
+                                      )),
+                                  style: sendDataToFirebaseButtonStyle,
+                                  onPressed: () {
+                                    // readData();
+                                    (statuspump_04["status"] == 1)
+                                        ? updateData(0, "Pump_04")
+                                        : updateData(1, "Pump_04");
+                                    print("AB Spare pump working");
+                                  },
+                                ),
+                              ),
+                            ],
+                          ),
+                          SizedBox(
+                            width: 5.0,
+                          ),
+                          Container(
+                              height: 60.0,
+                              width: 125.0,
+                              decoration: BoxDecoration(
+                                color: (statuspump_04["status"] == 1)
+                                    ? Colors.greenAccent[100].withOpacity(0.5)
+                                    : Colors.grey[100],
+                                borderRadius: BorderRadius.circular(10.0),
+                              ),
+                              child: Center(
+                                  child: (statuspump_04["status"] == 1)
+                                      ? Text("กำลังทำงาน",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20.0,
+                                            color: Colors.green,
+                                            fontFamily: 'KanitLight',
+                                          ))
+                                      : Text("หยุดทำงาน",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20.0,
+                                            color: Colors.red,
+                                            fontFamily: 'KanitLight',
+                                          ))))
+                        ])),
+                // ปั้มกวน A
+                Container(
+                    height: 75.0,
+                    width: 125.0,
+                    margin: EdgeInsets.fromLTRB(5.0, 10.0, 5.0, 0),
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10.0),
+                        boxShadow: [
+                          BoxShadow(blurRadius: 2.0, color: Colors.grey)
+                        ]),
+                    child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: <Widget>[
+                          Stack(
+                            children: <Widget>[
+                              Container(
+                                padding: EdgeInsets.fromLTRB(5, 5, 5, 5.0),
+                                child: ElevatedButton(
+                                  child: Text('ปั้มกวนปุ๋ย A',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20.0,
+                                        color: Colors.green[900],
+                                        fontFamily: 'KanitLight',
+                                      )),
+                                  style: sendDataToFirebaseButtonStyle,
+                                  onPressed: () {
+                                    // readData();
+                                    (statuspump_05["status"] == 1)
+                                        ? updateData(0, "Pump_05")
+                                        : updateData(1, "Pump_05");
+                                    print("Circulate A pump working");
+                                  },
+                                ),
+                              ),
+                            ],
+                          ),
+                          SizedBox(
+                            width: 5.0,
+                          ),
+                          Container(
+                              height: 60.0,
+                              width: 125.0,
+                              decoration: BoxDecoration(
+                                color: (statuspump_05["status"] == 1)
+                                    ? Colors.greenAccent[100].withOpacity(0.5)
+                                    : Colors.grey[100],
+                                borderRadius: BorderRadius.circular(10.0),
+                              ),
+                              child: Center(
+                                  child: (statuspump_05["status"] == 1)
                                       ? Text("กำลังทำงาน",
                                           style: TextStyle(
                                             fontWeight: FontWeight.bold,
@@ -255,7 +392,7 @@ class _ControlPumpState extends State<ControlPump> {
                               Container(
                                 padding: EdgeInsets.fromLTRB(5, 5, 5, 5.0),
                                 child: ElevatedButton(
-                                  child: Text('ปั้มโดสปุ๋ย A',
+                                  child: Text('ปั้ม Dosing A',
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 20.0,
@@ -265,10 +402,10 @@ class _ControlPumpState extends State<ControlPump> {
                                   style: sendDataToFirebaseButtonStyle,
                                   onPressed: () {
                                     // readData();
-                                    (statuspump_4["status"] == 1)
-                                        ? updateData(0,"Pump_4")
-                                        : updateData(1,"Pump_4");
-                                    print("Cooling pump working");
+                                    (statuspump_06["status"] == 1)
+                                        ? updateData(0, "Pump_06")
+                                        : updateData(1, "Pump_06");
+                                    print("Dosing A pump working");
                                   },
                                 ),
                               ),
@@ -281,13 +418,13 @@ class _ControlPumpState extends State<ControlPump> {
                               height: 60.0,
                               width: 125.0,
                               decoration: BoxDecoration(
-                                color: (statuspump_4["status"] == 1)
+                                color: (statuspump_06["status"] == 1)
                                     ? Colors.greenAccent[100].withOpacity(0.5)
                                     : Colors.grey[100],
                                 borderRadius: BorderRadius.circular(10.0),
                               ),
                               child: Center(
-                                  child: (statuspump_4["status"] == 1)
+                                  child: (statuspump_06["status"] == 1)
                                       ? Text("กำลังทำงาน",
                                           style: TextStyle(
                                             fontWeight: FontWeight.bold,
@@ -303,208 +440,7 @@ class _ControlPumpState extends State<ControlPump> {
                                             fontFamily: 'KanitLight',
                                           ))))
                         ])),
-                // ปั้ม Dosing B
-                Container(
-                    height: 75.0,
-                    width: 125.0,
-                    margin: EdgeInsets.fromLTRB(5.0, 10.0, 5.0, 0),
-                    decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(10.0),
-                        boxShadow: [
-                          BoxShadow(blurRadius: 2.0, color: Colors.grey)
-                        ]),
-                    child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: <Widget>[
-                          Stack(
-                            children: <Widget>[
-                              Container(
-                                padding: EdgeInsets.fromLTRB(5, 5, 5, 5.0),
-                                child: ElevatedButton(
-                                  child: Text('ปั้มโดสปุ๋ย B',
-                                      style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 20.0,
-                                        color: Colors.green[900],
-                                        fontFamily: 'KanitLight',
-                                      )),
-                                  style: sendDataToFirebaseButtonStyle,
-                                  onPressed: () {
-                                    // readData();
-                                    (statuspump_5["status"] == 1)
-                                        ? updateData(0,"Pump_5")
-                                        : updateData(1,"Pump_5");
-                                    print("Cooling pump working");
-                                  },
-                                ),
-                              ),
-                            ],
-                          ),
-                          SizedBox(
-                            width: 5.0,
-                          ),
-                          Container(
-                              height: 60.0,
-                              width: 125.0,
-                              decoration: BoxDecoration(
-                                color: (statuspump_5["status"] == 1)
-                                    ? Colors.greenAccent[100].withOpacity(0.5)
-                                    : Colors.grey[100],
-                                borderRadius: BorderRadius.circular(10.0),
-                              ),
-                              child: Center(
-                                  child: (statuspump_5["status"] == 1)
-                                      ? Text("กำลังทำงาน",
-                                          style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 20.0,
-                                            color: Colors.green,
-                                            fontFamily: 'KanitLight',
-                                          ))
-                                      : Text("หยุดทำงาน",
-                                          style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 20.0,
-                                            color: Colors.red,
-                                            fontFamily: 'KanitLight',
-                                          ))))
-                        ])),
-                // ปั้ม Dosing Acid
-                Container(
-                    height: 75.0,
-                    width: 125.0,
-                    margin: EdgeInsets.fromLTRB(5.0, 10.0, 5.0, 0),
-                    decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(10.0),
-                        boxShadow: [
-                          BoxShadow(blurRadius: 2.0, color: Colors.grey)
-                        ]),
-                    child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: <Widget>[
-                          Stack(
-                            children: <Widget>[
-                              Container(
-                                padding: EdgeInsets.fromLTRB(5, 5, 5, 5.0),
-                                child: ElevatedButton(
-                                  child: Text('ปั้มโดส Acid',
-                                      style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 20.0,
-                                        color: Colors.green[900],
-                                        fontFamily: 'KanitLight',
-                                      )),
-                                  style: sendDataToFirebaseButtonStyle,
-                                  onPressed: () {
-                                    // readData();
-                                    (statuspump_6["status"] == 1)
-                                        ? updateData(0,"Pump_6")
-                                        : updateData(1,"Pump_6");
-                                    print("Cooling pump working");
-                                  },
-                                ),
-                              ),
-                            ],
-                          ),
-                          SizedBox(
-                            width: 5.0,
-                          ),
-                          Container(
-                              height: 60.0,
-                              width: 125.0,
-                              decoration: BoxDecoration(
-                                color: (statuspump_6["status"] == 1)
-                                    ? Colors.greenAccent[100].withOpacity(0.5)
-                                    : Colors.grey[100],
-                                borderRadius: BorderRadius.circular(10.0),
-                              ),
-                              child: Center(
-                                  child: (statuspump_6["status"] == 1)
-                                      ? Text("กำลังทำงาน",
-                                          style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 20.0,
-                                            color: Colors.green,
-                                            fontFamily: 'KanitLight',
-                                          ))
-                                      : Text("หยุดทำงาน",
-                                          style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 20.0,
-                                            color: Colors.red,
-                                            fontFamily: 'KanitLight',
-                                          ))))
-                        ])),
-                // ปั๊ม Circulate A
-                Container(
-                    height: 75.0,
-                    width: 125.0,
-                    margin: EdgeInsets.fromLTRB(5.0, 10.0, 5.0, 0),
-                    decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(10.0),
-                        boxShadow: [
-                          BoxShadow(blurRadius: 2.0, color: Colors.grey)
-                        ]),
-                    child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: <Widget>[
-                          Stack(
-                            children: <Widget>[
-                              Container(
-                                padding: EdgeInsets.fromLTRB(5, 5, 5, 5.0),
-                                child: ElevatedButton(
-                                  child: Text('ปั้มกวนปุ๋ย A',
-                                      style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 20.0,
-                                        color: Colors.green[900],
-                                        fontFamily: 'KanitLight',
-                                      )),
-                                  style: sendDataToFirebaseButtonStyle,
-                                  onPressed: () {
-                                    // readData();
-                                    (statuspump_7["status"] == 1)
-                                        ? updateData(0,"Pump_7")
-                                        : updateData(1,"Pump_7");
-                                    print("Cooling pump working");
-                                  },
-                                ),
-                              ),
-                            ],
-                          ),
-                          SizedBox(
-                            width: 5.0,
-                          ),
-                          Container(
-                              height: 60.0,
-                              width: 125.0,
-                              decoration: BoxDecoration(
-                                color: (statuspump_7["status"] == 1)
-                                    ? Colors.greenAccent[100].withOpacity(0.5)
-                                    : Colors.grey[100],
-                                borderRadius: BorderRadius.circular(10.0),
-                              ),
-                              child: Center(
-                                  child: (statuspump_7["status"] == 1)
-                                      ? Text("กำลังทำงาน",
-                                          style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 20.0,
-                                            color: Colors.green,
-                                            fontFamily: 'KanitLight',
-                                          ))
-                                      : Text("หยุดทำงาน",
-                                          style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 20.0,
-                                            color: Colors.red,
-                                            fontFamily: 'KanitLight',
-                                          ))))
-                        ])),
-                // ปั๊ม Circulate B
+                // ปั๊ม กวน B
                 Container(
                     height: 75.0,
                     width: 125.0,
@@ -533,10 +469,10 @@ class _ControlPumpState extends State<ControlPump> {
                                   style: sendDataToFirebaseButtonStyle,
                                   onPressed: () {
                                     // readData();
-                                    (statuspump_8["status"] == 1)
-                                        ? updateData(0,"Pump_8")
-                                        : updateData(1,"Pump_8");
-                                    print("Cooling pump working");
+                                    (statuspump_07["status"] == 1)
+                                        ? updateData(0, "Pump_07")
+                                        : updateData(1, "Pump_07");
+                                    print("Circulate B pump working");
                                   },
                                 ),
                               ),
@@ -549,13 +485,80 @@ class _ControlPumpState extends State<ControlPump> {
                               height: 60.0,
                               width: 125.0,
                               decoration: BoxDecoration(
-                                color: (statuspump_8["status"] == 1)
+                                color: (statuspump_07["status"] == 1)
                                     ? Colors.greenAccent[100].withOpacity(0.5)
                                     : Colors.grey[100],
                                 borderRadius: BorderRadius.circular(10.0),
                               ),
                               child: Center(
-                                  child: (statuspump_8["status"] == 1)
+                                  child: (statuspump_07["status"] == 1)
+                                      ? Text("กำลังทำงาน",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20.0,
+                                            color: Colors.green,
+                                            fontFamily: 'KanitLight',
+                                          ))
+                                      : Text("หยุดทำงาน",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20.0,
+                                            color: Colors.red,
+                                            fontFamily: 'KanitLight',
+                                          ))))
+                        ])),
+                // ปั๊ม Dosing B
+                Container(
+                    height: 75.0,
+                    width: 125.0,
+                    margin: EdgeInsets.fromLTRB(5.0, 10.0, 5.0, 0),
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10.0),
+                        boxShadow: [
+                          BoxShadow(blurRadius: 2.0, color: Colors.grey)
+                        ]),
+                    child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: <Widget>[
+                          Stack(
+                            children: <Widget>[
+                              Container(
+                                padding: EdgeInsets.fromLTRB(5, 5, 5, 5.0),
+                                child: ElevatedButton(
+                                  child: Text('ปั้ม Dosing B',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20.0,
+                                        color: Colors.green[900],
+                                        fontFamily: 'KanitLight',
+                                      )),
+                                  style: sendDataToFirebaseButtonStyle,
+                                  onPressed: () {
+                                    // readData();
+                                    (statuspump_08["status"] == 1)
+                                        ? updateData(0, "Pump_08")
+                                        : updateData(1, "Pump_08");
+                                    print("Dosing B pump working");
+                                  },
+                                ),
+                              ),
+                            ],
+                          ),
+                          SizedBox(
+                            width: 5.0,
+                          ),
+                          Container(
+                              height: 60.0,
+                              width: 125.0,
+                              decoration: BoxDecoration(
+                                color: (statuspump_08["status"] == 1)
+                                    ? Colors.greenAccent[100].withOpacity(0.5)
+                                    : Colors.grey[100],
+                                borderRadius: BorderRadius.circular(10.0),
+                              ),
+                              child: Center(
+                                  child: (statuspump_08["status"] == 1)
                                       ? Text("กำลังทำงาน",
                                           style: TextStyle(
                                             fontWeight: FontWeight.bold,
@@ -600,10 +603,10 @@ class _ControlPumpState extends State<ControlPump> {
                                   style: sendDataToFirebaseButtonStyle,
                                   onPressed: () {
                                     // readData();
-                                    (statuspump_9["status"] == 1)
-                                        ? updateData(0,"Pump_9")
-                                        : updateData(1,"Pump_9");
-                                    print("Cooling pump working");
+                                    (statuspump_09["status"] == 1)
+                                        ? updateData(0, "Pump_09")
+                                        : updateData(1, "Pump_09");
+                                    print("Circulate Acid pump working");
                                   },
                                 ),
                               ),
@@ -616,13 +619,13 @@ class _ControlPumpState extends State<ControlPump> {
                               height: 60.0,
                               width: 125.0,
                               decoration: BoxDecoration(
-                                color: (statuspump_9["status"] == 1)
+                                color: (statuspump_09["status"] == 1)
                                     ? Colors.greenAccent[100].withOpacity(0.5)
                                     : Colors.grey[100],
                                 borderRadius: BorderRadius.circular(10.0),
                               ),
                               child: Center(
-                                  child: (statuspump_9["status"] == 1)
+                                  child: (statuspump_09["status"] == 1)
                                       ? Text("กำลังทำงาน",
                                           style: TextStyle(
                                             fontWeight: FontWeight.bold,
@@ -638,6 +641,73 @@ class _ControlPumpState extends State<ControlPump> {
                                             fontFamily: 'KanitLight',
                                           ))))
                         ])),
+                // ปั๊ม Dosing Acid
+                Container(
+                    height: 75.0,
+                    width: 125.0,
+                    margin: EdgeInsets.fromLTRB(5.0, 10.0, 5.0, 0),
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10.0),
+                        boxShadow: [
+                          BoxShadow(blurRadius: 2.0, color: Colors.grey)
+                        ]),
+                    child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: <Widget>[
+                          Stack(
+                            children: <Widget>[
+                              Container(
+                                padding: EdgeInsets.fromLTRB(5, 5, 5, 5.0),
+                                child: ElevatedButton(
+                                  child: Text('ปั้ม Dosing Acid',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20.0,
+                                        color: Colors.green[900],
+                                        fontFamily: 'KanitLight',
+                                      )),
+                                  style: sendDataToFirebaseButtonStyle,
+                                  onPressed: () {
+                                    // readData();
+                                    (statuspump_10["status"] == 1)
+                                        ? updateData(0, "Pump_10")
+                                        : updateData(1, "Pump_10");
+                                    print("Dosing Acid pump working");
+                                  },
+                                ),
+                              ),
+                            ],
+                          ),
+                          SizedBox(
+                            width: 5.0,
+                          ),
+                          Container(
+                              height: 60.0,
+                              width: 125.0,
+                              decoration: BoxDecoration(
+                                color: (statuspump_10["status"] == 1)
+                                    ? Colors.greenAccent[100].withOpacity(0.5)
+                                    : Colors.grey[100],
+                                borderRadius: BorderRadius.circular(10.0),
+                              ),
+                              child: Center(
+                                  child: (statuspump_10["status"] == 1)
+                                      ? Text("กำลังทำงาน",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20.0,
+                                            color: Colors.green,
+                                            fontFamily: 'KanitLight',
+                                          ))
+                                      : Text("หยุดทำงาน",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20.0,
+                                            color: Colors.red,
+                                            fontFamily: 'KanitLight',
+                                          ))))
+                        ]))
               ],
             );
           }

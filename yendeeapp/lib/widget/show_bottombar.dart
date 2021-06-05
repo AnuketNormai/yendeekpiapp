@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:yendeeapp/widget/contenthome.dart';
 import 'package:yendeeapp/widget/control_pump.dart';
+import 'package:yendeeapp/widget/control_valve.dart';
 import 'package:yendeeapp/widget/homepage.dart';
 
 class MyStatefulWidget extends StatefulWidget {
@@ -18,10 +19,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   List<Widget> _widgetOptions = <Widget>[
     ContentHome(),
     ControlPump(),
-    Text(
-      'Index 1: valve',
-      style: optionStyle,
-    ),
+    ControlValve(),
     Text(
       'Index 2: Temperature',
       style: optionStyle,
@@ -76,32 +74,32 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            label: 'Home',
+            label: 'หน้าหลัก',
             backgroundColor: Colors.green[900],
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.water_damage_outlined),
-            label: 'Pump',
+            label: 'ปั้มน้ำ',
             backgroundColor: Colors.green[900],
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.format_color_reset),
-            label: 'Valve',
+            label: 'วาล์ว',
             backgroundColor: Colors.green[900],
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.wb_sunny_outlined),
-            label: 'Temperature',
+            label: 'อุณหภูมิ',
             backgroundColor: Colors.green[900],
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.waves),
-            label: 'WaterFlow',
+            label: 'มิเตอร์น้ำ',
             backgroundColor: Colors.green[900],
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.leaderboard_outlined),
-            label: 'Water level',
+            label: 'ระดับน้ำ',
             backgroundColor: Colors.green[900],
           ),
         ],
